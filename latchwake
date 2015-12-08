@@ -1,0 +1,41 @@
+#! /bin/sh
+#
+# /etc/init.d/latchwake
+#
+### BEGIN INIT INFO
+# Provides:          Latchwake
+# Required-Start:    $syslog
+# Required-Stop:     $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Latchwake para Linux. 
+# Description:	     Script que inicia el servicio de Latch para Wake on Lan.
+#
+### END INIT INFO
+#
+# Author: Manuel Barrero <maxssestepa@gmail.com>
+
+case "$1" in
+start)
+killall latchwakeon.py >/dev/null 2>&1 &
+echo "Servicio wake up lan para LATCH iniciado."
+sleep 2
+nohup /usr/local/src/latchwake/latchwakeon.py >/dev/null 2>&1 &
+;;
+stop)
+killall latchwakeon.py
+echo "Servicio wake up lan para LATCH detenido."
+;;
+restart)
+killall latchwakeon.py
+echo "Servicio wake up lan para LATCH reiniciado."
+sleep 2
+nohup /usr/local/src/latchwake/latchwakeon.py >/dev/null 2>&1 &
+;;
+*)
+echo "Servicio: /etc/init.d/latchwake {start|stop|restart} teclee la opcion que desee."
+exit 1
+;;
+esac
+
+exit 0
