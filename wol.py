@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 """
-Modulo para encender los equipos a traves de wol
+Modulo para encender los equipos a traves de WAKE ON LAN
 
 """
 
