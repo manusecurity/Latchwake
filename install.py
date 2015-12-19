@@ -6,7 +6,7 @@ import os, json, latch, parear, equipos, servicio
 def menu():
   os.system('clear')
   print ('\x1b[4mCONFIGURACION Y PAREADO WAKE ON LAN PARA LATCH\x1b[0m\n')
-  print ('ELIJA LA OPCION:')
+  print ('ELIJA UNA OPCION:')
   print ('1 Parear LATCH')
   print ('2 Equipos')
   print ('3 Servicio')
