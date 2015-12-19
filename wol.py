@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 """
-Small module for use with the wake on lan protocol.
+Modulo para encender los equipos a traves de wol
 
 """
 
