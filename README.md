@@ -24,4 +24,4 @@ chmod 550 latchwake latchwakeon.py install.py
 
 We will enter the latchwake plugin directory and execute the plugin “install” command: 
 ./install 
-Configure the plugin with the pair code and mac-ddress.
+Configure the plugin with the pair code and the mac-ddress.
