@@ -16,7 +16,7 @@ We will enter the installation directory “/usr/local/src” and download our p
 
 We will unzip the downloaded file and rename the directory as "latchwake". Remember that the files in this directory have to belong to the user "root" to ensure the safety of the plugin: 
 #unzip master.zip 
-#rename Latchwake-master latchwake 
+#mv Latchwake-master latchwake 
 
 We adapt the appropriate user and permissions: 
 #cd latchwake 
